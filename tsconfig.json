@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "lib": ["es6"],
+    "target": "esnext",
+    "moduleResolution": "node",
+    "isolatedModules": false,
+    "allowJs": true,
+    "noEmit": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "src"
+  ]
+}
