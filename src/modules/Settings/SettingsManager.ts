@@ -9,7 +9,7 @@ export default class SettingsManager {
   ): ApplicationResponsePromise<{ setting: SettingEntity }> {
     const setting = Utils.castMysqlRecordToObject<DatabaseSettings>(
       await Utils.getMysqlPool().execute(
-        "SELECT * FROM settings WHERE value = :value",
+        "SELECT * FROM settings WHERE value = :value AND `key`='secretKeyAccessWs'",
         { value }
       )
     );
